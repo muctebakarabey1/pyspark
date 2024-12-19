@@ -1,6 +1,7 @@
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import col, when, lit, sum, format_number
-
+from pyspark.sql.functions import col, when, lit, avg
+from pyspark.sql.functions import col, lit, when, sum, avg
+from pyspark.sql.functions import sum, format_number
 # Initialize Spark session and done
 spark = SparkSession.builder \
     .appName("Transform") \
