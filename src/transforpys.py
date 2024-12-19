@@ -1,4 +1,3 @@
-pip install sql
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, when, lit
 from pyspark.sql import SparkSession
