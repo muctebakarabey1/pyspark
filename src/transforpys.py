@@ -10,7 +10,7 @@ spark = SparkSession.builder \
     .appName("Transfrom") \
     .master("local[*]") \
     .getOrCreate()
-path= r"C://Users//karab//Downloads//sales.csv"
+path= "/tmp/bigdata_nov_2024/mucteba//sales.csv"
 dataframe = spark.read.csv(path,header = True, inferSchema = True)
 dataframe.show()
 # rename the column
