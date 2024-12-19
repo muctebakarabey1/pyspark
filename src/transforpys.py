@@ -1,3 +1,4 @@
+pip install sql
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, when, lit
 from pyspark.sql import SparkSession
@@ -9,7 +10,7 @@ spark = SparkSession.builder \
     .appName("Transfrom") \
     .master("local[*]") \
     .getOrCreate()
-path= "/tmp/bigdata_nov_2024/mucteba/sales.csv"
+path= r"C://Users//karab//Downloads//sales.csv"
 dataframe = spark.read.csv(path,header = True, inferSchema = True)
 dataframe.show()
 # rename the column
